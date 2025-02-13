@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <style><style>
-        body {
-            font-family: Arial, sans-serif;
+    <title>About Me</title>
+    <style>
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
             background-color: #f0f4f8;
             color: #333;
-            scroll-behavior: smooth;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px; /* Kichikroq padding */
+            padding: 20px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav {
             background-color: #333;
             display: flex;
             justify-content: center;
+            padding: 10px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -32,29 +38,28 @@
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            text-align: center;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background 0.3s;
         }
         nav a:hover {
             background-color: #575757;
-            color: #fff;
+            border-radius: 5px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
+        h2 {
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 30px;
         }
         .profile-pic {
             text-align: center;
@@ -67,15 +72,12 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
-        text-align: center;
-        padding: 5px; /* Kichikroq padding */
-        background-color: #4CAF50;
-        color: white;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
         }
-
         a {
             color: #4CAF50;
             text-decoration: none;
@@ -87,53 +89,54 @@
 </head>
 <body>
     <header>
-        <h1>Men Haqimda</h1>
+        Suxrobbek Yaxshiboyev
     </header>
     <nav>
         <a href="#about">Asosiy</a>
-        <a href="#education">Ta'lim</a>
+        <a href="#company">IT Kompaniyam</a>
         <a href="#skills">Ko'nikmalar</a>
-        <a href="#contact">Bog'lanish</a>
+        <a href="#contact">Bog‘lanish</a>
     </nav>
     <div class="container">
         <div class="profile-pic">
-            <img src="/home/suxrobbek/Link to photo_2025-01-26_12-10-55.jpg" alt="Mening rasim">
+            <img src="image.png" alt="Mening rasim">
         </div>
         <section id="about" class="section">
             <h2>Asosiy Ma'lumotlar</h2>
-            <p>Salom! Mening ismim suxrobbek. Men 2005-yilda tug'ilganman. 2022-yilda Samarqand Iqtisodiyot va Servis Institutiga o'qishga kirdim. 2024-yilda IT sohasiga kirib kelganman. Hozirda startaplar bilan faol shug'ullanmoqdaman va dasturlash bilan doimiy rivojlanmoqdaman.</p>
+            <p>Salom! Mening ismim <strong>Suxrobbek Yaxshiboyev</strong>. Men 2005-yilda tug‘ilganman. 2022-yilda Samarqand Iqtisodiyot va Servis Institutiga o‘qishga kirdim va hozirda 2-kurs talabasi sifatida tahsil olyapman.</p>
+            <p>2024-yilda IT sohasiga qiziqib, Najotalim o‘quv markazida Bacend yo‘nalishida o‘qishni boshladim. Shu vaqt davomida C++, Python, SQL, Flask, HTML, CSS kabi dasturlash tillarini o‘rgandim. Hozirda startaplar bilan ishlash ustida izlanmoqdaman.</p>
+            <p><strong>Mening hayotiy shiorim:</strong> "Har kuni o‘zimni kechagidan ko‘ra yaxshiroq versiyasiga aylantish!"</p>
         </section>
-        <section id="education" class="section">
-            <h2>Ta'lim</h2>
+        <section id="company" class="section">
+            <h2>Kelajakdagi IT Kompaniyam</h2>
+            <p>Men o‘z IT kompaniyamni yaratib, innovatsion texnologiyalar asosida quyidagi yo‘nalishlarda ishlashni maqsad qilganman:</p>
             <ul>
-                <li><strong>2005:</strong> Tug'ilgan yilim.</li>
-                <li><strong>2022:</strong> Samarqand Iqtisodiyot va Servis Institutiga o'qishga kirganman.</li>
-                <li><strong>2024:</strong> IT sohasida faoliyatni boshlaganman.</li>
+                <li><strong>Kompaniyam nomi:</strong> SoftGenx</li>
+                <li><strong>Dasturiy ta’minot ishlab chiqish:</strong> AI va Machine Learning dasturlar</li>
+                <li><strong>Web va mobil ilovalar:</strong> Android va iOS uchun ilovalar, PWA</li>
+                <li><strong>Kiberxavfsizlik:</strong> Big Data tahlili, blokcheyn texnologiyalari</li>
+                <li><strong>Startaplar bilan ishlash:</strong> Innovatsion yechimlar yaratish</li>
             </ul>
         </section>
         <section id="skills" class="section">
             <h2>Ko'nikmalar</h2>
             <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>SQL</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>TypeScript</li>
-                <li>PostgreSQL</li>
+                <li>Python, C++, SQL</li>
+                <li>Flask, HTML, CSS, JavaScript</li>
+                <li>TypeScript, PostgreSQL</li>
                 <li>Startaplar bilan ishlash va yechimlar yaratish</li>
             </ul>
         </section>
-        <section id="contact" class="section"><section id="contact" class="section">
-            <h2>Bog'lanish</h2>
+        <section id="contact" class="section">
+            <h2>Bog‘lanish</h2>
             <p>Email: <a href="mailto:yaxshiboyevsuxrobbek8@gmail.com">yaxshiboyevsuxrobbek8@gmail.com</a></p>
             <p>Telefon: <a href="tel:+998979372232">+998 (97) 937-22-32</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">Profilimni ko'rish</a></p>
             <p>Telegram: <a href="https://t.me/JS_Backendbard" target="_blank">@JS_Backendbard</a></p>
             <p>Instagram: <a href="https://instagram.com/SamIsI_123" target="_blank">SamIsI_123</a></p>
-        </section>        
+        </section>
     </div>
     <footer>
-        <p><center>copy; 2025 suxrobbek. Barcha huquqlar himoyalangan</center></p>
+        <p>© 2025 Suxrobbek Yaxshiboyev. Barcha huquqlar himoyalangan.</p>
     </footer>
 </body>
 </html>
